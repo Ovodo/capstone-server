@@ -8,6 +8,8 @@ app.use(express.urlencoded({ extended: false }));
 
 const PORT = process.env.PORT || 3001;
 
+let kokl = "smls";
+
 const initializeServer = async () => {
   app.get("/", function (req, res, next) {
     res.json({ success: "Express" });
